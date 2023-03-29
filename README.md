@@ -5,7 +5,7 @@ On this page, you will find code change patterns that were extracted from open s
 You can access the code change pattern in HTML format through this link (https://pycpat.github.io/HTML/2/directory.html) by using the pattern ID, which is also the name of the corresponding JSON file. Here is some information about the contents of the JSON file:
 ```json
 {
-"PATH" : "To find the HTML illustration of the pattern, you can add the prefix "https://pycpat.github.io/HTML/" to this filed"  
+"PATH" : "To find the HTML illustration of the pattern, you can add the prefix https://pycpat.github.io/HTML/ to this filed"  
 "NODES" : "Information about the pattern's repeated nodes"
     {
       "BEFORE_CHANGE" : "Nodes belonged to the code before to the change."
