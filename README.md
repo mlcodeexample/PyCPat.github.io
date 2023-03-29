@@ -1,29 +1,26 @@
 # PyCPat.github.io
 
-This page contains code change patterns that were mined from open source Python repositories. Each code change pattern consists of multiple instances of similar code changes. The "JSON" folder contains the pattern information in JSON format, while the "FRAGMENTS" folder contains the code changes that belong to each pattern.
-You can use the PATTERN_ID and the FRAGMENT_ID fields to access code changes in 
+On this page, you will find code change patterns that were extracted from open source Python repositories. Each pattern consists of several instances of similar code changes. The "JSON" directory includes pattern information in `JSON` format, while the "FRAGMENTS" directory contains code changes associated with each pattern. To access code changes in the "FRAGMENTS" folder, you can use the "PATTERN_ID" and "FRAGMENT_ID" fields. The folders in "FRAGMENTS" are named according to the "PATTERN_ID," while the code change files are named after the "FRAGMENT_ID."
 
-Below is the Json filde infomation. 
-- The Json file name is the pattern ID and you can use the pattern ID to access the pattern in html format in this link (https://pycpat.github.io/HTML/2/directory.html) for bettter illustration of the pattern.
-- Json file information:
+You can access the code change pattern in HTML format through this link (https://pycpat.github.io/HTML/2/directory.html) by using the pattern ID, which is also the name of the corresponding JSON file. Here is some information about the contents of the JSON file:
 ```json
 {
-"PATH" : "You can prefic this with https://pycpat.github.io/HTML/ to locate the html illustration of the pattern"
-"NODES" : "Information of the repeated nodes of the pattern"
+"PATH" : "To find the HTML illustration of the pattern, you can add the prefix "https://pycpat.github.io/HTML/" to this filed"  
+"NODES" : "Information about the pattern's repeated nodes"
     {
-      "BEFORE_CHANGE" : "Nodes belong to the code before the change"
-      "AFTER_CHANGE" : "Nodes belong to the code after the change"
+      "BEFORE_CHANGE" : "Nodes belonged to the code before to the change."
+      "AFTER_CHANGE" : "Nodes belonged to the code after to the change."
     }
-"NUMBER_OF_REPEATED_NODES": "Number of repeated nodes among the code change instances of the pattern"
+"NUMBER_OF_REPEATED_NODES": "The number of repeated nodes in the pattern's code change instances"
 "Fragments" : "Information of code changes instances"
     {
-      "FRAGMENT_ID" : Unique ID to identify the fragment. You can use this ID to access the code change in the "FRAGMENT" folder.
-      "PROJECT_NAME" : "The project that the change is belong to"
+      "FRAGMENT_ID" : "A unique ID is used to identify the fragment. You can use this ID to links to the code change in the "FRAGMENT" folder."
+      "PROJECT_NAME" : "The project to which the change pertains"
       "COMMIT_NAME" : "Commit hex"
       "TIME" : "The git commit time"
       "AUTHOR_NAME" : "Author of the commit"
-      "FILE_NAME" : "The file that the change is performed"
-      "CLASS_NAME" : "The class that the change is performed"
+      "FILE_NAME" : "The file in which the change is made"
+      "CLASS_NAME" : "The class in which the change is made"
       "AUTHOR_NAME" : "Author email address"
       "COMMITTER_EMAIL" : "Commiter email address"
       "NODE_INFO" : "The information of the repeated nodes of the fragment"
