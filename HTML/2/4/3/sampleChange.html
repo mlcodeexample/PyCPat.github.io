@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3></h3><h3>Before Change</h3><pre><code class='java'>
+class Test ():
+    def add_arrays(self):
+        M = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        add = <a id="change">numpy.sum(</a>M<a id="change">)</a>
+        sum = add*2
+        return sum
+
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    def add_arrays(self):
+        M = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        add = 0
+        <a id="change">for </a>x in M<a id="change">:
+            </a>add<a id="change">+=</a>x
+        sum = add*2
+        return sum
+</code></pre>

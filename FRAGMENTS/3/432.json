@@ -1,0 +1,1 @@
+{"BEFORE":"        Z = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        aaa = numpy.sum(Z)\n","AFTER":"        Z = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        bbb = 0\n        for y in Z:\n            bbb += y\n        sum = bbb * 2\n"}

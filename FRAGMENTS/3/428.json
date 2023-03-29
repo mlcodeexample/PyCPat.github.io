@@ -1,0 +1,1 @@
+{"BEFORE":"        Q = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        ccc = numpy.sum(Q)\n","AFTER":"        Q = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        bbb = 0\n        for a in Q:\n            bbb += a\n        cum = bbb * 2\n"}

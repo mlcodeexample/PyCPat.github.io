@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3></h3><h3>Before Change</h3><pre><code class='java'>
+        H = [[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9]]
+
+    def add_arrays2(self):
+        H = <a id="change">[[</a>1, 2, 3, 4, 5, 6, 7, 8, 9<a id="change"></a>],[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9]<a id="change"></a>]
+
+if __name__ == "__main__":
+    xxx = Test6().add_arrays()</code></pre><h3>After Change</h3><pre><code class='java'>
+        P = numpy.ndarray([[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9]])
+
+    def add_arrays2(self):
+        P = <a id="change">numpy.ndarray(</a><a id="change">[[</a>1, 2, 3, 4, 5, 6, 7, 8, 9<a id="change"></a>],[1, 2, 3, 4, 5, 6, 7, 8, 9],[1, 2, 3, 4, 5, 6, 7, 8, 9]<a id="change"></a>]<a id="change">)</a>
+
+if __name__ == "__main__":
+    xxx = Test6().add_arrays()
+    print(xxx)</code></pre>

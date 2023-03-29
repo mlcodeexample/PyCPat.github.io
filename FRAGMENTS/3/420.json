@@ -1,0 +1,1 @@
+{"BEFORE":"        M = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        add = numpy.sum(M)\n","AFTER":"        M = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n        add = 0\n        for x in M:\n            add+=x\n        sum = add*2\n"}

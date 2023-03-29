@@ -1,0 +1,39 @@
+digraph G {
+subgraph cluster0 {
+1 [label="If" a="96" s="165,359" l="3,-168" shape="diamond"];
+4 [label="Assign:=" a="68" s="195" l="2" shape="box"];
+7 [label="For" a="107" s="132,151" l="4,14" shape="diamond"];
+11 [label="Compare" a="40" s="168" l="5" shape="box"];
+12 [label="Num" a="76" s="171" l="1" shape="ellipse"];
+14 [label="Name" a="87" s="169" l="1" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="ListComp" a="106" s="143" l="30" shape="diamond"];
+3 [label="comprehension" a="45" s="146" l="3" shape="diamond"];
+5 [label="Assign:=" a="68" s="136" l="3" shape="box"];
+6 [label="Name" a="87" s="144" l="1" shape="ellipse"];
+8 [label="Compare" a="40" s="169" l="3" shape="box"];
+9 [label="If" a="96" s="169" l="3" shape="diamond"];
+10 [label="Num" a="76" s="171" l="1" shape="ellipse"];
+13 [label="function.sum()" a="75" s="139,173" l="4,1" shape="box"];
+15 [label="Name" a="87" s="144" l="1" shape="ellipse"];
+16 [label="Name" a="87" s="169" l="1" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 4 [label="_control_"];
+2 -> 13 [label="_para_"];
+3 -> 2 [label="_para_"];
+7 -> 11 [label="_control_"];
+7 -> 1 [label="_control_"];
+8 -> 9 [label="_cond_"];
+10 -> 8 [label="_para_"];
+11 -> 1 [label="_cond_"];
+12 -> 11 [label="_para_"];
+13 -> 5 [label="_para_"];
+14 -> 11 [label="_para_"];
+15 -> 3 [label="_cond_"];
+16 -> 8 [label="_para_"];
+}
