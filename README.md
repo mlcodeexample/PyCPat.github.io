@@ -1,4 +1,4 @@
-# PyCPat.github.io
+# Python code change patterns
 
 On this page, you will find code change patterns that were extracted from open source Python repositories. Each pattern consists of several instances of similar code changes. The "JSON" directory includes pattern information in `JSON` format, while the "FRAGMENTS" directory contains code changes associated with each pattern. To access code changes in the "FRAGMENTS" folder, you can use the "PATTERN_ID" and "FRAGMENT_ID" fields. The folders in "FRAGMENTS" are named according to the "PATTERN_ID," while the code change files are named after the "FRAGMENT_ID."
 
